@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Switch
+        android:id="@+id/task_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/task_name"
+        android:layout_width="219dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/task_completed"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/task_date"
+        android:layout_width="217dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task_name" />
+
+    <TextView
+        android:id="@+id/task_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/task_name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="id#" />
+
+    <Button
+        android:id="@+id/task_archive_button"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="ARCHIVE"
+        app:layout_constraintStart_toEndOf="@+id/task_delete_button"
+        app:layout_constraintTop_toBottomOf="@+id/task_date" />
+
+    <Button
+        android:id="@+id/task_delete_button"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="DELETE"
+        app:layout_constraintStart_toEndOf="@+id/task_edit_button"
+        app:layout_constraintTop_toBottomOf="@+id/task_date" />
+
+    <Button
+        android:id="@+id/task_edit_button"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:text="EDIT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task_date" />
+
+    <TextView
+        android:id="@+id/Item_id_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/task_archive_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/task_date"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="itemID"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

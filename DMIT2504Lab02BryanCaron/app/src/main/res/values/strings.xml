@@ -1,0 +1,43 @@
+<resources>
+    //Main Start Page
+    <string name="app_name">DMIT2504 Lab02</string>
+    <string name="add_button">ADD</string>
+    <string name="main_title">Manage List Title</string>
+    <string name="list_hint">Enter a new list title</string>
+
+    //Manage Todo Page
+    <string name="manage_todo_title">Manage Todo</string>
+    <string name="enter_a_task_to_complete">Enter a Task to Complete</string>
+
+
+    //Menu Strings
+    <string name="todo_items">Todo Item</string>
+    <string name="user_settings">Settings</string>
+    //UserSettings Strings
+    <string name="ui_settings_title">UI Settings</string>
+    <string name="account_settings_title">Account Settings</string>
+
+    //Archive Strings
+    <string name="archive_items_title">Archive Items</string>
+
+    //login Preferences
+    <string name="preferences_url_key">url</string>
+    <string name="preferences_url_title">URL</string>
+    <string name="preferences_url_summary">use this to change your connection url</string>
+    <string name="preferences_login_name_key">login_name</string>
+    <string name="preferences_login_name_title">Login Name</string>
+    <string name="preferences_login_name_summary">use this to change your login name</string>
+    <string name="preferences_password_key">password</string>
+    <string name="preferences_password_title">Password</string>
+    <string name="preferences_password_summary">use this to change your password</string>
+    //UI Preferences
+    <string name="preference_main_bg_key">bg_color</string>
+    <string name="preference_main_bg_title">Main Background Color</string>
+    <string name="preference_main_bg_summary">use this to change your main background color</string>
+
+    <string name="preferences_font_size_key">font_size</string>
+    <string name="preferences_font_size_title">Font Size</string>
+    <string name="preferences_font_size_summary">use this to change your font size</string>
+
+
+</resources>
